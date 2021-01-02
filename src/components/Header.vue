@@ -5,6 +5,9 @@
       <li><router-link :to="{ name: 'Home' }">Úvod</router-link></li>
       <li><router-link :to="{ name: 'Rules' }">Pravidla</router-link></li>
       <li><router-link :to="{ name: 'Join' }">Jak se Připojit</router-link></li>
+      <li>
+        <router-link :to="{ name: 'Calendar' }">Kalendář akcí</router-link>
+      </li>
     </ul>
   </div>
 </template>

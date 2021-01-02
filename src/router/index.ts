@@ -3,6 +3,7 @@ import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
 import Rules from "../views/Rules.vue";
 import Join from "../views/Join.vue";
+import Calendar from "../views/Calendar.vue";
 
 Vue.use(VueRouter);
 
@@ -13,14 +14,19 @@ const routes: Array<RouteConfig> = [
     component: Home
   },
   {
-    path: "/pravidla",
+    path: "/rules",
     name: "Rules",
     component: Rules
   },
   {
-    path: "/pripoj",
+    path: "/join",
     name: "Join",
     component: Join
+  },
+  {
+    path: "/calendar",
+    name: "Calendar",
+    component: Calendar
   }
 ];
 
