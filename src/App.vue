@@ -1,5 +1,30 @@
 <template>
-  <router-view />
+  <div>
+    <Header />
+    <br />
+    <router-view />
+  </div>
 </template>
 
-<style></style>
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import Header from "@/components/Header.vue";
+
+@Component({
+  components: {
+    Header
+  }
+})
+export default class App extends Vue {}
+</script>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: #1a1a1d;
+  color: #ffeeee;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+</style>
