@@ -7,6 +7,7 @@ import Calendar from "../views/Calendar.vue";
 import Contact from "../views/Contact.vue";
 
 // TODO Auto import
+// TODO 404
 
 Vue.use(VueRouter);
 
