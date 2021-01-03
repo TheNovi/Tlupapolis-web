@@ -7,14 +7,16 @@
     <a href="https://thenovi.github.io/" target="_blank">TheNovi</a>. Napsaná
     pomocí knihovny <a href="https://vuejs.org/" target="_blank">Vue.js</a> v
     jazyce
-    <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>.
+    <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> a
+    nasazená díky
+    <a href="https://www.netlify.com/" target="_blank">Netlify.com</a>.
     <br />
     Kód je na
     <a href="https://github.com/TheNovi/TlupaPolis-Web" target="_blank">Zde</a>
 
     <br />
     <br />
-    Momentálně scháním designery/grafiky, akorát předem říkám že ti nic
+    Momentálně sháním designery/grafiky, akorát předem říkám že ti nic
     nezaplatím (tento project je zatím dost malý, abych do něj vrážel peníze).
     <br />
     Pokud máš stejně zájem: prosím kontaktujte TheNovi.
@@ -54,9 +56,10 @@
     <a href="https://opensource.org/licenses/MIT" target="_blank">MIT licence</a
     >, at this time only one person is working on it:
     <a href="https://thenovi.github.io/" target="_blank">TheNovi</a>. Using
-    <a href="https://vuejs.org/" target="_blank">Vue.js</a> library and
+    <a href="https://vuejs.org/" target="_blank">Vue.js</a> library, writed in
     <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>
-    languge.
+    languge and deployed on
+    <a href="https://www.netlify.com/" target="_blank">Netlify.com</a>.
     <br />
     You can find code
     <a href="https://github.com/TheNovi/TlupaPolis-Web" target="_blank">here</a>
