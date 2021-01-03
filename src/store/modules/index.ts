@@ -3,16 +3,11 @@ import { VuexModule } from "vuex-module-decorators";
 /**
  * Automatically imports all the modules and exports as a single module object
  */
-const requireModule = require.context(".", false, /\.store\.ts$/);
 const modules: { [id: string]: VuexModule } = {};
 
+const requireModule = require.context(".", false, /\.store\.ts$/);
 requireModule.keys().forEach(filename => {
-  // create the module name from fileName
-  // remove the store.js extension and capitalize
-  const moduleName = filename.replace(/(\.\/|\.store\.ts)/g, "");
-  // .replace(/^\w/, c => c.toUpperCase());
-
-  modules[moduleName] =
+  modules[filename.replace(/(\.\/|\.store\.ts)/g, "")] =
     requireModule(filename).default || requireModule(filename);
 });
 

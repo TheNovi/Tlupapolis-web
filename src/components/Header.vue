@@ -39,6 +39,5 @@ ul li {
 
 a {
   font-size: 1.5vw;
-  color: #ac1730;
 }
 </style>

@@ -4,6 +4,9 @@ import Home from "../views/Home.vue";
 import Rules from "../views/Rules.vue";
 import Join from "../views/Join.vue";
 import Calendar from "../views/Calendar.vue";
+import Contact from "../views/Contact.vue";
+
+// TODO Auto import
 
 Vue.use(VueRouter);
 
@@ -27,6 +30,11 @@ const routes: Array<RouteConfig> = [
     path: "/calendar",
     name: "Calendar",
     component: Calendar
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Contact
   }
 ];
 
