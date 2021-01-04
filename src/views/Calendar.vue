@@ -18,13 +18,12 @@ export default class Calendar extends Vue {
     {
       id: "1",
       title: "All-day event",
-      start: new Date().toISOString().replace(/T.*$/, "") + "T12:00:00"
+      start: new Date(2021, 0, 9, 1).toISOString().replace(/T.*$/, "")
     },
     {
       id: "2",
       title: "Timed event",
-      start:
-        new Date(2020, 1, 8).toISOString().replace(/T.*$/, "") + "T12:00:00"
+      start: new Date(2021, 0, 8, 10).toISOString()
     }
   ];
   calendarOptions: CalendarOptions = {
