@@ -40,13 +40,8 @@
     <br />
     Kontakt na TheNovi: <br />
     Nejlépe mi napíšeš přes discord: TheNovi#9782 <br />
-    Popřípadě zde je zbytek:
-    <a href="https://thenovi.github.io/html/Contact.html" target="_blank"
-      >contact</a
-    >
-    <br />
-    (plus facebook:
-    <a href="https://www.facebook.com/TheN0vi" target="_blank">facebook</a>)
+    Popřípadě zde jsou ostaní možnosti komunikace:
+    <a href="https://thenovi.github.io/#/contact" target="_blank">contact</a>
 
     <!-- English -->
     <br />
