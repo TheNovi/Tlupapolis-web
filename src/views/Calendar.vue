@@ -10,26 +10,21 @@
 import { Vue, Component } from "vue-property-decorator";
 import FullCalendar, { CalendarOptions, EventInput } from "@fullcalendar/vue";
 import dayGridPlugin from "@fullcalendar/daygrid";
-// import interactionPlugin from "@fullcalendar/interaction";
+import { namespace } from "vuex-class";
+const events = namespace("events");
 
 @Component({ components: { FullCalendar } })
 export default class Calendar extends Vue {
-  currentEvents: EventInput[] = [
-    {
-      id: "1",
-      title: "All-day event",
-      start: new Date(2021, 0, 9, 1).toISOString().replace(/T.*$/, "")
-    },
-    {
-      id: "2",
-      title: "Timed event",
-      start: new Date(2021, 0, 8, 10).toISOString()
-    }
-  ];
+  @events.State
+  currentEvents!: EventInput[];
+
   calendarOptions: CalendarOptions = {
     plugins: [dayGridPlugin],
-    initialEvents: this.currentEvents,
     initialView: "dayGridMonth"
   };
+
+  created() {
+    this.calendarOptions.initialEvents = this.currentEvents;
+  }
 }
 </script>
