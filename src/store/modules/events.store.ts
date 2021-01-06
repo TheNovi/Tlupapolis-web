@@ -3,16 +3,17 @@ import { VuexModule, Module } from "vuex-module-decorators";
 
 @Module({ namespaced: true })
 export default class Events extends VuexModule {
+  // https://fullcalendar.io/docs/event-parsing
   currentEvents: EventInput[] = [
     {
-      id: "1",
-      title: "All-day event",
-      start: new Date(2021, 0, 9, 1).toISOString().replace(/T.*$/, "")
+      title: "All Day",
+      start: new Date("1-9-2021"),
+      allDay: true,
+      color: "red"
     },
     {
-      id: "2",
       title: "Timed event",
-      start: new Date(2021, 0, 8, 10).toISOString()
+      start: new Date(2021, 0, 8, 18)
     }
   ];
 }
