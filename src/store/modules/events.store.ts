@@ -7,13 +7,13 @@ export default class Events extends VuexModule {
   currentEvents: EventInput[] = [
     {
       title: "All Day",
-      start: new Date("1-9-2021"),
+      start: new Date("2021-1-9"),
       allDay: true,
       color: "red"
     },
     {
       title: "Timed event",
-      start: new Date(2021, 0, 8, 18)
+      start: new Date("2021-1-10 18:00")
     }
   ];
 }

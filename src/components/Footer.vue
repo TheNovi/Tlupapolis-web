@@ -13,7 +13,7 @@ export default class Footer extends Vue {}
 
 <style scoped>
 div {
-  position: fixed;
+  /* position: fixed; */
   bottom: 1%;
   width: 99%;
   text-align: right;

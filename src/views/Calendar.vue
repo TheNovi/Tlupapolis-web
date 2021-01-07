@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="calendar">
     <FullCalendar :options="calendarOptions" />
   </div>
 </template>
@@ -21,13 +21,21 @@ export default class Calendar extends Vue {
   calendarOptions: CalendarOptions = {
     plugins: [listPlugin, dayGridPlugin],
     headerToolbar: {
-      left: "prev,next today",
+      left: "prev,today,next",
       center: "title",
       right: "dayGridMonth,listMonth"
     },
+    allDayText: "Celý den",
+    buttonText: {
+      //   prev: "Dříve",
+      //   next: "Později",
+      today: "Nyní",
+      month: "Měsíc",
+      list: "Seznam"
+    },
     locale: "cs",
-    // dayMaxEvents: true, // allow "more" link when too many events
-    firstDay: 1
+    firstDay: 1,
+    height: "auto"
   };
 
   created() {
@@ -35,3 +43,18 @@ export default class Calendar extends Vue {
   }
 }
 </script>
+
+<style>
+/* Must be non-scoped for some reason */
+:root {
+  --fc-list-event-hover-bg-color: #2a2a2a;
+}
+/* .fc-day-disabled { */
+.calendar .fc-cell-shaded {
+  background: #1a1a1a;
+}
+
+.calendar .fc-col-header-cell {
+  background: #1a1a1a;
+}
+</style>
