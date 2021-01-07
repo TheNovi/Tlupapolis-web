@@ -6,14 +6,20 @@ export default class Events extends VuexModule {
   // https://fullcalendar.io/docs/event-parsing
   currentEvents: EventInput[] = [
     {
-      title: "All Day",
-      start: new Date("2021-1-9"),
-      allDay: true,
-      color: "red"
+      title: "Založení projektu: TlupaPolis-Web",
+      start: new Date("2021-1-2 20:04:27"),
+      // allDay: true,
+      color: "grey"
     },
     {
-      title: "Timed event",
-      start: new Date("2021-1-10 18:00")
+      title: "Stránky hostnuté na netlify.com",
+      start: new Date("2021-1-3 10:33:35"),
+      color: "grey"
+    },
+    {
+      title: "Založení tohoto kalendáře",
+      start: new Date("2021-1-7 8:06"),
+      color: "grey"
     }
   ];
 }

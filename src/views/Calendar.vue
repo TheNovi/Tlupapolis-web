@@ -50,6 +50,7 @@ https://github.com/fullcalendar/fullcalendar/blob/master/packages/common/src/sty
 */
 .calendar {
   --fc-list-event-hover-bg-color: #2a2a2a;
+
   --fc-page-bg-color: #1a1a1a;
   --fc-neutral-bg-color: transparent;
   --fc-border-color: #555555;
@@ -61,5 +62,7 @@ https://github.com/fullcalendar/fullcalendar/blob/master/packages/common/src/sty
   --fc-button-hover-border-color: transparent;
   --fc-button-active-bg-color: #a11223;
   --fc-button-active-border-color: transparent;
+
+  --fc-today-bg-color: #292929;
 }
 </style>
