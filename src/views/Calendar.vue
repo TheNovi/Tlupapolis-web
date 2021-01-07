@@ -1,6 +1,6 @@
 <template>
-  <div class="calendar">
-    <FullCalendar :options="calendarOptions" />
+  <div>
+    <FullCalendar class="calendar" :options="calendarOptions" />
   </div>
 </template>
 
@@ -25,7 +25,6 @@ export default class Calendar extends Vue {
       center: "title",
       right: "dayGridMonth,listMonth"
     },
-    allDayText: "Celý den",
     buttonText: {
       //   prev: "Dříve",
       //   next: "Později",
@@ -33,6 +32,7 @@ export default class Calendar extends Vue {
       month: "Měsíc",
       list: "Seznam"
     },
+    allDayText: "Celý den",
     locale: "cs",
     firstDay: 1,
     height: "auto"
@@ -45,16 +45,21 @@ export default class Calendar extends Vue {
 </script>
 
 <style>
-/* Must be non-scoped for some reason */
-:root {
+/* Must be non-scoped for some reason
+https://github.com/fullcalendar/fullcalendar/blob/master/packages/common/src/styles/vars.css
+*/
+.calendar {
   --fc-list-event-hover-bg-color: #2a2a2a;
-}
-/* .fc-day-disabled { */
-.calendar .fc-cell-shaded {
-  background: #1a1a1a;
-}
+  --fc-page-bg-color: #1a1a1a;
+  --fc-neutral-bg-color: transparent;
+  --fc-border-color: #555555;
 
-.calendar .fc-col-header-cell {
-  background: #1a1a1a;
+  --fc-button-text-color: #fff;
+  --fc-button-bg-color: #fc1730;
+  --fc-button-border-color: transparent;
+  --fc-button-hover-bg-color: #ff4157;
+  --fc-button-hover-border-color: transparent;
+  --fc-button-active-bg-color: #a11223;
+  --fc-button-active-border-color: transparent;
 }
 </style>
