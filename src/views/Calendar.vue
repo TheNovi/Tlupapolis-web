@@ -51,7 +51,7 @@ https://github.com/fullcalendar/fullcalendar/blob/master/packages/common/src/sty
 .calendar {
   --fc-list-event-hover-bg-color: #2a2a2a;
 
-  --fc-page-bg-color: #1a1a1a;
+  --fc-page-bg-color: var(--background);
   --fc-neutral-bg-color: transparent;
   --fc-border-color: #555555;
 

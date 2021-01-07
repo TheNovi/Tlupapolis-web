@@ -21,8 +21,8 @@ export default class Nav extends Vue {}
 
 <style scoped>
 #root {
-  background: #1a1a1d;
-  background: linear-gradient(0deg, #1a1a1d, #4e4e50 100%);
+  background: var(--background);
+  background: linear-gradient(0deg, var(--background), #4e4e50 100%);
 }
 
 #title {

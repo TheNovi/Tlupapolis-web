@@ -22,16 +22,21 @@ export default class App extends Vue {}
 </script>
 
 <style>
+:root {
+  --background: #1a1a1d;
+  --text-color: #dddddd;
+  --link-color: #ac1730;
+}
 body {
   margin: 0;
   padding: 0;
-  background: #1a1a1d;
-  color: #ffeeee;
+  background: var(--background);
+  color: var(--text-color);
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
 
 a {
-  color: #ac1730;
+  color: var(--link-color);
 }
 </style>
