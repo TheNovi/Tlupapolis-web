@@ -22,16 +22,16 @@ export default class Nav extends Vue {}
 <style scoped>
 #root {
   background: var(--background);
-  background: linear-gradient(0deg, var(--background), #4e4e50 100%);
 }
 
 #title {
-  color: #f3073f;
+  color: var(--text-color);
   font-size: 16px; /* fallback */
   font-size: 6vw;
 }
 
 ul li {
+  padding: 0;
   text-decoration: none;
   display: inline;
   margin: 1%;

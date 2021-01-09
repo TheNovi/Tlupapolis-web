@@ -26,8 +26,6 @@ export default class Calendar extends Vue {
       right: "dayGridMonth,listMonth"
     },
     buttonText: {
-      //   prev: "Dříve",
-      //   next: "Později",
       today: "Nyní",
       month: "Měsíc",
       list: "Seznam"
@@ -49,20 +47,20 @@ export default class Calendar extends Vue {
 https://github.com/fullcalendar/fullcalendar/blob/master/packages/common/src/styles/vars.css
 */
 .calendar {
-  --fc-list-event-hover-bg-color: #2a2a2a;
+  --fc-list-event-hover-bg-color: var(--color2);
 
-  --fc-page-bg-color: var(--background);
+  --fc-page-bg-color: var(--bg-color);
   --fc-neutral-bg-color: transparent;
-  --fc-border-color: #555555;
+  --fc-border-color: var(--color2);
 
-  --fc-button-text-color: #fff;
-  --fc-button-bg-color: #fc1730;
+  --fc-button-text-color: var(--text-color);
+  --fc-button-bg-color: var(--color2);
   --fc-button-border-color: transparent;
-  --fc-button-hover-bg-color: #ff4157;
+  --fc-button-hover-bg-color: var(--color3);
   --fc-button-hover-border-color: transparent;
-  --fc-button-active-bg-color: #a11223;
+  --fc-button-active-bg-color: var(--color3);
   --fc-button-active-border-color: transparent;
 
-  --fc-today-bg-color: #292929;
+  --fc-today-bg-color: var(--color2);
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="ahoj">
     <Header />
     <br />
-    <router-view />
+    <router-view class="router" />
     <Footer />
   </div>
 </template>
@@ -23,17 +23,24 @@ export default class App extends Vue {}
 
 <style>
 :root {
-  --background: #1a1a1d;
+  --bg-color: #1a1a1d;
+  --link-color: #6e6e70;
+  --color2: #444444;
+  --color3: #242424;
   --text-color: #dddddd;
-  --link-color: #ac1730;
 }
+
 body {
   margin: 0;
   padding: 0;
-  background: var(--background);
+  background: var(--bg-color);
   color: var(--text-color);
   text-align: center;
   font-family: "Times New Roman", Times, serif;
+}
+
+.ahoj {
+  height: 100vh;
 }
 
 a {
