@@ -1,8 +1,22 @@
 import Vue from "vue";
-import VueRouter from "vue-router";
-import routes from "./import";
+import VueRouter, { RouteConfig } from "vue-router";
+import Home from "@/views/Home.vue";
+import Rules from "@/views/Rules.vue";
 
 Vue.use(VueRouter);
+
+const routes: Array<RouteConfig> = [
+  {
+    path: "/",
+    name: "Home",
+    component: Home
+  },
+  {
+    path: "/rules",
+    name: "Rules",
+    component: Rules
+  }
+];
 
 const router = new VueRouter({
   mode: "history",
