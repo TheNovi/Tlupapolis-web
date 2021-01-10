@@ -20,14 +20,14 @@ import Footer from "@/components/Footer.vue";
   }
 })
 export default class App extends Vue {
-  // @Watch("$route")
-  // changeTitle() {
-  //   const t = this.$route.meta.title;
-  //   document.title = "TlupaPolis" + (t ? " | " + t : "");
-  // }
-  // mounted() {
-  //   this.changeTitle();
-  // }
+  @Watch("$route")
+  changeTitle() {
+    const t = this.$route.meta.title;
+    document.title = "TlupaPolis" + (t ? " | " + t : "");
+  }
+  mounted() {
+    this.changeTitle();
+  }
 }
 </script>
 
