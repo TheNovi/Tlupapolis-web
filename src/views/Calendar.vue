@@ -30,6 +30,7 @@ export default class Calendar extends Vue {
       month: "Měsíc",
       list: "Seznam"
     },
+    initialView: "listMonth",
     allDayText: "Celý den",
     locale: "cs",
     firstDay: 1,
@@ -61,6 +62,6 @@ https://github.com/fullcalendar/fullcalendar/blob/master/packages/common/src/sty
   --fc-button-active-bg-color: var(--color3);
   --fc-button-active-border-color: transparent;
 
-  --fc-today-bg-color: var(--color2);
+  --fc-today-bg-color: var(--color3);
 }
 </style>

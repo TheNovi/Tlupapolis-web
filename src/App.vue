@@ -24,10 +24,10 @@ export default class App extends Vue {}
 <style>
 :root {
   --bg-color: #1a1a1d;
-  --link-color: #6e6e70;
+  --link-color: #7e7e80;
   --color2: #444444;
   --color3: #242424;
-  --text-color: #dddddd;
+  --text-color: #eee;
 }
 
 body {
