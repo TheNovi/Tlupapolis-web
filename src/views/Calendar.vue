@@ -17,7 +17,6 @@ const events = namespace("events");
   components: { FullCalendar }
 })
 export default class Calendar extends Vue {
-  static title = "Kalendář";
   @events.State
   currentEvents!: EventInput[];
 

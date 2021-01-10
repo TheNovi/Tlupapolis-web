@@ -8,7 +8,5 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component
-export default class Join extends Vue {
-  static title = "Jak se Připojit";
-}
+export default class Join extends Vue {}
 </script>

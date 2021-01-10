@@ -65,7 +65,5 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component
-export default class Contact extends Vue {
-  static title = "Kontakt";
-}
+export default class Contact extends Vue {}
 </script>

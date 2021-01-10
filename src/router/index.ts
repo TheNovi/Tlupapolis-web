@@ -1,61 +1,45 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-// import Home from "@/views/Home.vue";
-// import Rules from "@/views/Rules.vue";
-// import Join from "@/views/Join.vue";
-// import Contact from "@/views/Contact.vue";
-// import Calendar from "@/views/Calendar.vue";
+import Home from "@/views/Home.vue";
+import Rules from "@/views/Rules.vue";
+import Join from "@/views/Join.vue";
+import Calendar from "@/views/Calendar.vue";
+import Contact from "@/views/Contact.vue";
 
 Vue.use(VueRouter);
 
-// const routes: Array<RouteConfig> = [
-//   {
-//     path: "/",
-//     name: "Home",
-//     meta: {},
-//     component: Home
-//   },
-//   {
-//     path: "/rules",
-//     name: "Rules",
-//     meta: { title: "Pravidla" },
-//     component: Rules
-//   },
-//   {
-//     path: "/join",
-//     name: "Join",
-//     meta: { title: "Jak se Připojit" },
-//     component: Join
-//   },
-//   {
-//     path: "/contact",
-//     name: "Contact",
-//     meta: { title: "Kontakt" },
-//     component: Contact
-//   },
-//   {
-//     path: "/calendar",
-//     name: "Calendar",
-//     meta: { title: "Kalendář" },
-//     component: Calendar
-//   }
-// ];
-
-const routes: Array<RouteConfig> = [];
-
-const requireModule = require.context("@/views", false, /\.vue$/);
-
-requireModule.keys().forEach(filename => {
-  const c = requireModule(filename).default || requireModule(filename);
-  routes.push({
-    path: "/" + c.name.toLowerCase().replace(/^home$/, ""),
-    name: c.name,
-    component: c,
-    meta: {
-      title: c.title
-    }
-  });
-});
+const routes: Array<RouteConfig> = [
+  {
+    path: "/",
+    name: "Home",
+    meta: {},
+    component: Home
+  },
+  {
+    path: "/rules",
+    name: "Rules",
+    meta: { title: "Pravidla" },
+    component: Rules
+  },
+  {
+    path: "/join",
+    name: "Join",
+    meta: { title: "Jak se Připojit" },
+    component: Join
+  },
+  {
+    path: "/calendar",
+    name: "Calendar",
+    meta: { title: "Kalendář" },
+    component: Calendar
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    meta: { title: "Kontakt" },
+    component: Contact
+  }
+];
 
 const router = new VueRouter({
   mode: "history",
