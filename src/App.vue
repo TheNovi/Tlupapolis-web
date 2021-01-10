@@ -3,12 +3,13 @@
     <Header />
     <br />
     <router-view class="router" />
+    <br />
     <Footer />
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Watch } from "vue-property-decorator";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
@@ -18,7 +19,17 @@ import Footer from "@/components/Footer.vue";
     Footer
   }
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  @Watch("$route")
+  changeTitle() {
+    const t = this.$route.meta.title;
+    document.title = "TlupaPolis" + (t ? " | " + t : "");
+  }
+
+  mounted() {
+    this.changeTitle();
+  }
+}
 </script>
 
 <style>

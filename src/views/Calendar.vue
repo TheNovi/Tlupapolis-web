@@ -13,8 +13,11 @@ import { namespace } from "vuex-class";
 const events = namespace("events");
 // https://fullcalendar.io/docs
 
-@Component({ components: { FullCalendar } })
+@Component({
+  components: { FullCalendar }
+})
 export default class Calendar extends Vue {
+  static title = "Kalendář";
   @events.State
   currentEvents!: EventInput[];
 

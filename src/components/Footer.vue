@@ -12,7 +12,6 @@ export default class Footer extends Vue {}
 </script>
 
 <style scoped>
-/*TODO Flexbox*/
 div {
   width: 99%;
   text-align: right;

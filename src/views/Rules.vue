@@ -8,5 +8,7 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component
-export default class Rules extends Vue {}
+export default class Rules extends Vue {
+  static title = "Pravidla";
+}
 </script>
