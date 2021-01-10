@@ -2,7 +2,7 @@
   <div class="ahoj">
     <Header />
     <br />
-    <router-view class="router" />
+    <router-view />
     <br />
     <Footer />
   </div>
