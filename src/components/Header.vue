@@ -26,8 +26,8 @@ export default class Nav extends Vue {}
 
 #title {
   color: var(--text-color);
-  font-size: 16px; /* fallback */
-  font-size: 8vw;
+  font-size: 60px; /* fallback */
+  font-size: calc(50px + 3vw);
 }
 
 ul {
@@ -44,6 +44,7 @@ ul li {
 }
 
 a {
-  font-size: 2vw;
+  font-size: 15px; /* fallback */
+  font-size: calc(10px + 1vw);
 }
 </style>
