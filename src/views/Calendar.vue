@@ -40,7 +40,7 @@ export default class Calendar extends Vue {
   };
 
   created() {
-    this.calendarOptions.initialEvents = this.currentEvents;
+    this.calendarOptions.events = this.currentEvents;
   }
 }
 </script>
