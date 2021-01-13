@@ -1,11 +1,25 @@
 <template>
-  <div class="ahoj">
-    <Header />
-    <br />
-    <router-view />
-    <br />
-    <Footer />
-  </div>
+  <v-app>
+    <v-app-bar app color="primary" dark>
+      <h1>TlupaPolis</h1>
+
+      <!-- <v-btn
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+        text
+      >
+        <span class="mr-2">Latest Release</span>
+      </v-btn> -->
+    </v-app-bar>
+
+    <v-main>
+      <router-view></router-view>
+    </v-main>
+
+    <v-footer>
+      <Footer />
+    </v-footer>
+  </v-app>
 </template>
 
 <script lang="ts">
@@ -30,30 +44,3 @@ export default class App extends Vue {
   }
 }
 </script>
-
-<style>
-:root {
-  --bg-color: #1a1a1d;
-  --link-color: #7e7e80;
-  --color2: #444444;
-  --color3: #242424;
-  --text-color: #eee;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background: var(--bg-color);
-  color: var(--text-color);
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.ahoj {
-  height: 100vh;
-}
-
-a {
-  color: var(--link-color);
-}
-</style>
