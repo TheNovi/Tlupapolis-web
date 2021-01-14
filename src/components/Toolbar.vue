@@ -10,8 +10,8 @@
         tag="span"
         style="cursor: pointer"
         class="headline"
-        >Tlupa<span class="grey--text text--lighten-2">Polis</span></router-link
-      >
+        ><Title
+      /></router-link>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
@@ -29,7 +29,7 @@
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="title">
-            Tlupa<span class="grey--text text--lighten-2">Polis</span>
+            <Title />
           </v-list-item-title>
         </v-list-item-content>
         <v-list-item-action>
@@ -58,8 +58,9 @@
 
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
+import Title from "@/components/Title.vue";
 
-@Component
+@Component({ components: { Title } })
 export default class Toolbar extends Vue {
   drawer = false;
   links = [
