@@ -50,6 +50,12 @@ export default class Calendar extends Vue {
 https://github.com/fullcalendar/fullcalendar/blob/master/packages/common/src/styles/vars.css
 */
 .calendar {
+  --bg-color: #1a1a1d;
+  --link-color: #7e7e80;
+  --color2: #444444;
+  --color3: #242424;
+  --text-color: #eee;
+
   --fc-list-event-hover-bg-color: var(--color2);
 
   --fc-page-bg-color: var(--bg-color);
