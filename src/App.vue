@@ -1,19 +1,11 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <h1>TlupaPolis</h1>
-
-      <!-- <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn> -->
-    </v-app-bar>
+    <Toolbar />
 
     <v-main>
-      <router-view></router-view>
+      <v-container fluid>
+        <router-view />
+      </v-container>
     </v-main>
 
     <v-footer>
@@ -24,16 +16,18 @@
 
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-property-decorator";
-import Header from "@/components/Header.vue";
+import Toolbar from "@/components/Toolbar.vue";
 import Footer from "@/components/Footer.vue";
 
 @Component({
   components: {
-    Header,
+    Toolbar,
     Footer
   }
 })
 export default class App extends Vue {
+  drawer = false;
+
   @Watch("$route")
   changeTitle() {
     const t = this.$route.meta.title;
