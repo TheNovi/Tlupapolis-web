@@ -1,75 +1,55 @@
 <template>
   <div>
-    <FullCalendar class="calendar" :options="calendarOptions" />
+    <v-container fluid>
+      <v-btn text @click="prev">
+        <v-icon>mdi-chevron-left</v-icon>
+      </v-btn>
+      <v-btn text @click="today">
+        Nyní
+      </v-btn>
+      <v-btn text @click="next">
+        <v-icon>mdi-chevron-right</v-icon>
+      </v-btn>
+    </v-container>
+    <v-calendar
+      v-model="focus"
+      ref="calendar"
+      :weekdays="[1, 2, 3, 4, 5, 6, 0]"
+      :type="type"
+      :events="currentEvents"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
-import FullCalendar, { CalendarOptions, EventInput } from "@fullcalendar/vue";
-import dayGridPlugin from "@fullcalendar/daygrid";
-import listPlugin from "@fullcalendar/list";
 import { namespace } from "vuex-class";
+import TPEvent from "@/model/TPEvent";
 const events = namespace("events");
-// https://fullcalendar.io/docs
 
-@Component({
-  components: { FullCalendar }
-})
+@Component
 export default class Calendar extends Vue {
   @events.State
-  currentEvents!: EventInput[];
+  currentEvents!: Array<TPEvent>;
 
-  calendarOptions: CalendarOptions = {
-    plugins: [listPlugin, dayGridPlugin],
-    headerToolbar: {
-      left: "prev,today,next",
-      center: "title",
-      right: "dayGridMonth,listMonth"
-    },
-    buttonText: {
-      today: "Nyní",
-      month: "Měsíc",
-      list: "Seznam"
-    },
-    initialView: "listMonth",
-    allDayText: "Celý den",
-    locale: "cs",
-    firstDay: 1,
-    height: "auto"
-  };
+  focus = "";
+  type = "month"; //["month", "week", "4day", "day", "category"]
 
-  created() {
-    this.calendarOptions.events = this.currentEvents;
+  today() {
+    this.focus = "";
+  }
+  prev() {
+    this.calendarInstance.prev();
+  }
+  next() {
+    this.calendarInstance.next();
+  }
+  private get calendarInstance() {
+    return this.$refs.calendar as Vue & {
+      prev: () => void;
+      next: () => void;
+      checkChange: () => void;
+    };
   }
 }
 </script>
-
-<style>
-/* Must be non-scoped for some reason
-https://github.com/fullcalendar/fullcalendar/blob/master/packages/common/src/styles/vars.css
-*/
-.calendar {
-  --bg-color: #1a1a1d;
-  --link-color: #7e7e80;
-  --color2: #444444;
-  --color3: #242424;
-  --text-color: #eee;
-
-  --fc-list-event-hover-bg-color: var(--color2);
-
-  --fc-page-bg-color: var(--bg-color);
-  --fc-neutral-bg-color: transparent;
-  --fc-border-color: var(--color2);
-
-  --fc-button-text-color: var(--text-color);
-  --fc-button-bg-color: var(--color2);
-  --fc-button-border-color: transparent;
-  --fc-button-hover-bg-color: var(--color3);
-  --fc-button-hover-border-color: transparent;
-  --fc-button-active-bg-color: var(--color3);
-  --fc-button-active-border-color: transparent;
-
-  --fc-today-bg-color: var(--color3);
-}
-</style>
