@@ -8,31 +8,33 @@ const routes: Array<RouteConfig> = [
     path: "/",
     name: "Home",
     meta: {},
-    component: () => import("@/views/Home.vue")
+    component: () => import(/* webpackChunkName: "home" */ "@/views/Home.vue")
   },
   {
     path: "/rules",
     name: "Rules",
     meta: { title: "Pravidla" },
-    component: () => import("@/views/Rules.vue")
+    component: () => import(/* webpackChunkName: "rules" */ "@/views/Rules.vue")
   },
   {
     path: "/join",
     name: "Join",
     meta: { title: "Jak se Připojit" },
-    component: () => import("@/views/Join.vue")
+    component: () => import(/* webpackChunkName: "join" */ "@/views/Join.vue")
   },
   {
     path: "/calendar",
     name: "Calendar",
     meta: { title: "Kalendář" },
-    component: () => import("@/views/Calendar.vue")
+    component: () =>
+      import(/* webpackChunkName: "calendar" */ "@/views/Calendar.vue")
   },
   {
     path: "/contact",
     name: "Contact",
     meta: { title: "Kontakt" },
-    component: () => import("@/views/Contact.vue")
+    component: () =>
+      import(/* webpackChunkName: "contact" */ "@/views/Contact.vue")
   }
 ];
 
