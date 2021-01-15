@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <router-link :to="{ name: 'Contact' }">Kontakt/Pomoc</router-link>
-  </div>
+  <v-footer>
+    <v-spacer></v-spacer>
+    <v-btn text :to="{ name: 'Contact' }">Kontakt/Pomoc</v-btn>
+  </v-footer>
 </template>
 
 <script lang="ts">
@@ -10,10 +11,3 @@ import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class Footer extends Vue {}
 </script>
-
-<style scoped>
-div {
-  width: 99%;
-  text-align: right;
-}
-</style>

@@ -11,7 +11,7 @@
   },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "netlify dev": "netlify dev",
+    "netlify_dev": "netlify dev",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
