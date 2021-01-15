@@ -1,5 +1,3 @@
-import { VCalendar } from "vuetify/lib";
-
 export interface VCalendarEvent {
   name: string;
   start: string | Date;
