@@ -3,7 +3,6 @@ import { VuexModule, Module } from "vuex-module-decorators";
 
 @Module({ namespaced: true })
 export default class Events extends VuexModule {
-  // https://fullcalendar.io/docs/event-parsing
   currentEvents: Array<TPEvent> = [
     {
       name: "Založení projektu: TlupaPolis-Web",
@@ -20,12 +19,6 @@ export default class Events extends VuexModule {
     {
       name: "Založení starého kalendáře",
       start: new Date("2021-1-7 8:06"),
-      timed: true,
-      color: "grey"
-    },
-    {
-      name: "Další měsíc",
-      start: new Date("2020-12-29 8:00"),
       timed: true,
       color: "grey"
     }

@@ -12,8 +12,8 @@
       </v-btn>
     </v-container>
     <v-calendar
-      v-model="focus"
       ref="calendar"
+      v-model="focus"
       :weekdays="[1, 2, 3, 4, 5, 6, 0]"
       :type="type"
       :events="currentEvents"

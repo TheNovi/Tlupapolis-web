@@ -1,8 +1,8 @@
 export interface VCalendarEvent {
   name: string;
   start: string | Date;
-  timed: boolean;
-  color: string;
+  timed?: boolean;
+  color?: string;
   end?: string | Date;
   category?: string;
 }
