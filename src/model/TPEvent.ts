@@ -9,6 +9,6 @@ export interface VCalendarEvent {
 
 // TODO Constructor
 export default interface TPEvent extends VCalendarEvent {
-  desc?: string;
+  details?: string;
   author?: string;
 }
