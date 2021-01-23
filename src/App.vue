@@ -28,10 +28,10 @@ export default class App extends Vue {
   routeChange() {
     const t = this.$route.meta.title;
     document.title = "TlupaPolis" + (t ? " | " + t : "");
-    this.pickName();
   }
   mounted() {
     this.routeChange();
+    this.pickName();
   }
 
   @basic.Action

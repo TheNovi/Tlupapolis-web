@@ -11,7 +11,7 @@ export default class Basic extends VuexModule {
 
   @Action
   pickName() {
-    this.context.commit("setName", Math.floor(Math.random() * 4));
+    this.context.commit("setName", Math.floor(Math.random() * 6));
     console.log(this.randomName);
   }
 }
