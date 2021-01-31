@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="(section, i) in rules" :key="i">
+    <div v-for="(section, i) in rules" :key="i" class="my-4">
       {{ section.name }}
       <v-expansion-panels focusable>
         <v-expansion-panel
@@ -11,7 +11,7 @@
             {{ paragraph.name }}
           </v-expansion-panel-header>
           <v-expansion-panel-content>
-            <div v-for="(point, i) in paragraph.points" :key="i">
+            <div v-for="(point, i) in paragraph.points" :key="i" class="my-2">
               {{ i + 1 }}. {{ point }}
             </div>
           </v-expansion-panel-content>
