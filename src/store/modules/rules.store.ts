@@ -5,6 +5,9 @@ import { VuexModule, Module } from "vuex-module-decorators";
 export default class Rules extends VuexModule {
   copyright =
     "Všechna práva vyhrazena společností Welfare & PARTNERS s.r.o., advokátní kancelář";
+  org_url =
+    "https://docs.google.com/document/d/1wk1j0hymzrZTuCxpn5XKORSR0rzg1nHBOOjrCEB4YhI";
+  update_date = new Date("2021-1-30 20:00");
   rules: Array<Section> = [
     {
       name: "ČÁST PRVNÍ -  Obecná část",

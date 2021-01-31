@@ -18,6 +18,12 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </div>
+    <div id="footer">
+      {{ copyright }}<br />
+      Originální soubor:
+      <a :href="org_url" target="_blank" rel="noopener noreferrer">zde</a><br />
+      Poslední aktualizace {{ update_date }}
+    </div>
   </div>
 </template>
 
@@ -31,5 +37,18 @@ const rules = namespace("rules");
 export default class Rules extends Vue {
   @rules.State
   rules!: Array<Section>;
+  @rules.State
+  copyright!: string;
+  @rules.State
+  org_url!: string;
+  @rules.State
+  update_date!: Date;
 }
 </script>
+
+<style scoped>
+#footer {
+  color: grey;
+  text-align: right;
+}
+</style>
