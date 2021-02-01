@@ -2,24 +2,40 @@
   <div>
     <!-- I really don't undrestand this 'prettier' formating -->
     Tato stránka je opensource projekt pod
-    <a href="https://opensource.org/licenses/MIT" target="_blank">MIT licencí</a
+    <a
+      href="https://opensource.org/licenses/MIT"
+      rel="noopener noreferrer"
+      target="_blank"
+      >MIT licencí</a
     >, momentálně spravovaná jedním člověkem:
-    <a href="https://thenovi.github.io/" target="_blank">TheNovi</a>. Napsaná
-    pomocí knihovny <a href="https://vuejs.org/" target="_blank">Vue.js</a> v
-    jazyce
-    <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> a
-    nasazená díky
-    <a href="https://www.netlify.com/" target="_blank">Netlify.com</a>.
+    <a
+      href="https://thenovi.github.io/"
+      rel="noopener noreferrer"
+      target="_blank"
+      >TheNovi</a
+    >. Napsaná pomocí knihovny
+    <a href="https://vuejs.org/" rel="noopener noreferrer" target="_blank"
+      >Vue.js</a
+    >
+    v jazyce
+    <a
+      href="https://www.typescriptlang.org/"
+      rel="noopener noreferrer"
+      target="_blank"
+      >TypeScript</a
+    >
+    a nasazená díky
+    <a href="https://www.netlify.com/" rel="noopener noreferrer" target="_blank"
+      >Netlify.com</a
+    >.
     <br />
     Kód je na
-    <a href="https://github.com/TheNovi/TlupaPolis-Web" target="_blank">Zde</a>
-
-    <br />
-    <br />
-    Momentálně sháním designery/grafiky, akorát předem říkám že ti nic
-    nezaplatím (tento project je zatím dost malý, abych do něj vrážel peníze).
-    <br />
-    Pokud máš stejně zájem: prosím kontaktujte TheNovi.
+    <a
+      href="https://github.com/TheNovi/TlupaPolis-Web"
+      rel="noopener noreferrer"
+      target="_blank"
+      >Zde</a
+    >
     <br />
     <br />
     Programátorskou pomoc nesháním, pokud by jsi náhodou moc chtěl pomoci, tak:
@@ -29,7 +45,10 @@
     <br />
     <br />
     Pokud jsi našel chybu nebo tě napadlo nějaké vylepšení: podívej se
-    <a href="https://github.com/TheNovi/TlupaPolis-Web/issues" target="_blank"
+    <a
+      href="https://github.com/TheNovi/TlupaPolis-Web/issues"
+      rel="noopener noreferrer"
+      target="_blank"
       >zde</a
     >
     jestli to už nenašel někdo jiný. <br />
@@ -41,11 +60,16 @@
     Kontakt na TheNovi: <br />
     Nejlépe mi napíšeš přes discord: TheNovi#9782 <br />
     Popřípadě zde jsou ostaní možnosti komunikace:
-    <a href="https://thenovi.github.io/#/contact" target="_blank">contact</a>
+    <a
+      href="https://thenovi.github.io/#/contact"
+      rel="noopener noreferrer"
+      target="_blank"
+      >contact</a
+    >
   </div>
 </template>
 <script lang="ts">
-// TODO This needs some styling
+// TODO #7 This needs some styling
 import { Component, Vue } from "vue-property-decorator";
 
 @Component
