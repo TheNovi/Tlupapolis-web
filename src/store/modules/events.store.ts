@@ -37,6 +37,20 @@ export default class Events extends VuexModule {
       timed: true,
       color: "green",
       author: "Whaskalmanik, BotmanGOD"
+    },
+    {
+      name: "Hon na draka",
+      start: new Date("2021-1-31 17:00"),
+      timed: true,
+      color: "green",
+      author: "Miitch"
+    },
+    {
+      name: "Co na to TlupaPolis",
+      start: new Date("2021-2-4 19:00"),
+      // timed: true,
+      color: "green",
+      author: "Whaskalmanik"
     }
   ];
 }
