@@ -42,22 +42,6 @@
     Nejlépe mi napíšeš přes discord: TheNovi#9782 <br />
     Popřípadě zde jsou ostaní možnosti komunikace:
     <a href="https://thenovi.github.io/#/contact" target="_blank">contact</a>
-
-    <!-- English -->
-    <br />
-    <br />
-    <br />
-    This site is opensource project under
-    <a href="https://opensource.org/licenses/MIT" target="_blank">MIT licence</a
-    >, at this time only one person is working on it:
-    <a href="https://thenovi.github.io/" target="_blank">TheNovi</a>. Using
-    <a href="https://vuejs.org/" target="_blank">Vue.js</a> library, writed in
-    <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>
-    languge and deployed on
-    <a href="https://www.netlify.com/" target="_blank">Netlify.com</a>.
-    <br />
-    You can find code
-    <a href="https://github.com/TheNovi/TlupaPolis-Web" target="_blank">here</a>
   </div>
 </template>
 <script lang="ts">
