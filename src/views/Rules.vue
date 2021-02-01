@@ -18,7 +18,7 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </div>
-    <div id="footer">
+    <div style="color: grey; text-align: right;">
       {{ copyright }}<br />
       Originální soubor:
       <a :href="org_url" target="_blank" rel="noopener noreferrer">zde</a><br />
@@ -45,10 +45,3 @@ export default class Rules extends Vue {
   update_date!: Date;
 }
 </script>
-
-<style scoped>
-#footer {
-  color: grey;
-  text-align: right;
-}
-</style>
