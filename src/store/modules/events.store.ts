@@ -12,12 +12,6 @@ export default class Events extends VuexModule {
       details: "Let's go!"
     },
     {
-      name: "Stránky hostnuté na netlify.com",
-      start: new Date("2021-1-3 10:33:35"),
-      timed: true,
-      color: "grey"
-    },
-    {
       name: "Spuštění TlupaPolis 2 serveru",
       start: new Date("2021-1-21 17:00"),
       timed: true,
